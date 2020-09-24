@@ -1,16 +1,24 @@
 ﻿#include "pch.h"
 #include "Class.h"
 #include "Class.g.cpp"
+#include <chrono>
+
+using namespace std::chrono_literals;
 
 namespace winrt::MyLibrary::implementation
 {
     int32_t Class::MyProperty()
     {
-        throw hresult_not_implemented();
+        return _value;
     }
 
-    void Class::MyProperty(int32_t /* value */)
+    void Class::MyProperty(int32_t value)
     {
-        throw hresult_not_implemented();
+        _value = value;
     }
+    Windows::Foundation::IAsyncAction Class::WasteTimeAsync(winrt::Windows::Foundation::TimeSpan const &forHowLong)
+    {
+        co_await forHowLong;
+    }
+
 }
