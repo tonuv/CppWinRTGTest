@@ -89,4 +89,9 @@ At this point you can run tests and reference classes from your WinRT component 
   
 </assembly>
 ```
-
+8. Building for x64
+The default Google test template adds a preprocessor define "X64" that will break the build if compiled for x64 platform. To fix that
+- Open Project Properties
+- Got to C/C++ Preprocessor settings
+- Select Configuration: All configurations, Platform: x64
+- Remove the X64 value from Preprocessor definitions.
