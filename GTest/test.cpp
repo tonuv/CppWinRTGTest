@@ -9,9 +9,15 @@ using namespace std::chrono_literals;
 using namespace winrt::Windows::Foundation;
 
 
+
 TEST(ClassTests, Ctor) {
 	Class c = Class();
 	EXPECT_EQ(0, c.MyProperty());
+}
+
+TEST(LoadDllTests, Load) {
+
+	EXPECT_EQ(4.0f, Class::GetSquare(2.0f));
 }
 
 /*

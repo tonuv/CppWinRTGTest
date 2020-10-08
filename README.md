@@ -95,3 +95,5 @@ The default Google test template adds a preprocessor define "X64" that will brea
 - Got to C/C++ Preprocessor settings
 - Select Configuration: All configurations, Platform: x64
 - Remove the X64 value from Preprocessor definitions.
+
+9. If you are using LoadPackagedLibrary, then that will fail when called under a win32 context (unit test executable). The solution is to use LoadLibrary instead. Please look at the Class.cpp in MyLibrary project to see sample.

@@ -6,5 +6,6 @@ namespace MyLibrary
         Class();
         Int32 MyProperty;
         static Windows.Foundation.IAsyncAction WasteTimeAsync(Windows.Foundation.TimeSpan howLong);
+        static Single GetSquare(Single value);
     }
 }

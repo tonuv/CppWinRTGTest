@@ -13,4 +13,9 @@
       <IsWinMDFile>false</IsWinMDFile>
     </ReferenceCopyLocalPaths>
   </ItemGroup>
+    <ItemGroup>
+      <ReferenceCopyLocalPaths Include="$(SolutionDir)bin\Dll1\$(Configuration)\$(PlatformShortName)\Dll1.dll">
+        <IsWinMDFile>false</IsWinMDFile>
+      </ReferenceCopyLocalPaths>
+    </ItemGroup>
 </Project>

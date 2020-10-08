@@ -12,6 +12,7 @@ namespace winrt::MyLibrary::implementation
 
         int32_t MyProperty();
         void MyProperty(int32_t value);
+        static float GetSquare(float value);
         static Windows::Foundation::IAsyncAction WasteTimeAsync(winrt::Windows::Foundation::TimeSpan const &forHowLong);
     };
 }
